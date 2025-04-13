@@ -1,13 +1,18 @@
-import React from 'react'
+import { createContext } from "react";
 
-const DoctorContext = () => {
-  return (
-    <div>
-      
-    </div>
-  )
+export const DoctorContext = createContext()
+
+const DoctorContextProvider = (props) =>{
+     const value = {
+       
+     }
+     return (
+      <DoctorContext.Provider value={value}>
+         {props.children}
+      </DoctorContext.Provider>
+     )
 }
 
-export default DoctorContext
+export default DoctorContextProvider
 
 

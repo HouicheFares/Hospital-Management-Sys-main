@@ -51,7 +51,7 @@ const Login = () => {
             <p> Password</p>
             <input onChange={(e)=>setPassword(e.target.value)} value={password} className='border border-border-[#DADADA] rounded w-full p-2 mt-1' type="password" required />
            </div>
-           <button className='bq-primary text-white w-full  py-2 rounded-md text-base' > Login</button>
+           <button className='bg-blue-600 hover:bg-blue-700 text-white w-full py-2 rounded-md text-base'>Login</button>
            {
             state === 'Admin'
             ?<p>Doctor Login ? <span className='text-primary underline cursor-pointer' onClick={()=>setState('Doctor')}>Click here</span></p>
